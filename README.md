@@ -1,6 +1,6 @@
 # README
 
-## Requirements:
+## Requirements
 
 Uses the C++11 version of C++.
 
@@ -14,10 +14,10 @@ Specify the choice of the parameters of the system:
  - `double c` = cost for changing food spot.
 
 Specify the choice of the simulation parameters: 
- - `double epsi` = time resolution;
+ - `double epsi` = with probability *epsi*, the agent choose a food at random, with probability *(1-epsi)* it uses its strategy; 
  - `int64_t max_Nit` = total number of actions taken by all the agents (an action = going out or going home);
  -  `int N_average` = number of systems simulated, over which measured quantities are averaged.
 
-## Compile:
+### To compile:
 
 `g++ -std=c++11 -O2 library.cpp main.cpp print.cpp graph.cpp`
